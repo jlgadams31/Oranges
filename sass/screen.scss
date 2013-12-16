@@ -1,0 +1,324 @@
+ html{
+    height: 100%;
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+body {
+    padding-top: 40px;
+    height: 100%;
+}
+
+p{
+    line-height: 2em;
+}
+
+
+.container {
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+}
+
+
+/*HEADER*/
+
+.logo{
+    background: url(../images/logo.png) no-repeat;
+    background-size:  90px 111px;
+    width: 90px;
+    height: 111px;
+    float: left;
+    position: fixed;
+    top:0;
+}
+
+.top {
+        position: fixed;
+        float: right;
+        background-color: #fff;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        padding: 6px 0;
+        height: auto;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+.nav{
+        float: right;
+        padding-top: 1p
+}
+
+.nav > a{
+        display: inline-block;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        font-weight: bold;
+}
+
+.nav .active a {
+    text-shadow: 0 -1px 0 rgba(0,0,0,1);
+}
+
+.nav a:hover {
+    background: orange;
+    color: white;
+}
+
+.green{
+    background: orange;
+}
+
+
+.text-center{
+    text-align: center;
+    text-decoration: uppercase;
+}
+/*HERO*/
+
+.hero-image{
+    margin: 0;
+    // padding-top:1px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    clear: both;
+    background: url(../images/image-1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+
+.headline{
+    background-color: rgba(255,255,255,0.9);
+    // position: absolute;
+    // top: 35%;
+    min-height: 200px;
+    color: #383533;
+    /*height: 30%;*/
+    padding: 1em;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    margin-top: 175px;
+    text-align:center;
+}
+.btn:active{
+    color: orange;
+}
+
+/*ABOUT*/
+.container .about{
+    padding-top: 20px;
+}
+
+.about{
+    // margin: 80px 0 1000px 0;
+    padding-top: 20px;
+}
+.pile{
+    float:left;
+    padding-top: 20px;
+}
+.sec-line{
+    text-align:center;
+    font-size: 14pt;
+}
+
+/*STORY*/
+.container .story{
+    // padding-top: 30px;
+    margin-top: 50px;
+}
+
+
+/*FORM*/
+
+.crate-image{
+    margin: 0;
+    // padding-top:1px;
+    position: relative;
+    width: auto;
+    height: 100%;
+    clear: both;
+    background: url(../images/crateoforanges.jpg) no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+    overflow: auto;
+}
+
+.check-out{
+    background-color: rgba(255,255,255,0.6);
+    /*position: absolute;*/
+    /*top:15%;*/
+    /*min-height: 200px;*/
+    color: #383533;
+    /*height: 100%;*/
+    padding: 2em;
+    /*box-shadow: 0 3px 5px rgba(0,0,0,0.2);*/
+    font-size: 10pt;
+    display:Block;
+}
+
+h2{
+    text-align:center;
+    text-transform: uppercase
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.container{
+    margin-bottom: 1em;
+}
+
+legend{
+    border:none;
+}
+
+input[type="text"]{
+    margin-bottom: .5em;
+}
+
+input[type="text"]:focus{
+    border: 2px solid orange;
+    outline: 0;
+    outline: none !important;
+}
+
+.orderbtn{
+    margin-left: 15px;
+    padding-right: 15px;
+}
+.hidden{
+    display:none;
+}
+
+.apologies{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 200px;
+    padding: 0 60px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.endline{
+    position:relative;
+    margin-top: 12%;
+    text-decoration: italic;
+    font-size: 8pt;
+}
+@media screen and (max-width: 400px) {
+    .logo{
+    background: url(../images/logo.png) no-repeat;
+    background-size:  90px 111px;
+    width: 90px;
+    height: 111px;
+    }
+
+.about{
+    font-size: 2pt;
+}
+.sec-line{
+    font-size: 9pt;
+}
+.sec-center{
+    clear:both;
+    font-size: 11pt;
+    text-align: center;
+}
+.pile{
+    width: 250px;
+    height:190px;
+}
+
+h2{
+    padding-top: 35px;
+    font-size: 20pt;
+}
+
+.under{
+    padding-left: 20px;
+}
+.col-md-3{
+    text-align: center;
+}
+.crate-mob{
+    font-size:20px;
+    margin-top: 10%;
+}
+.apologies{
+    font-size:24px;
+    text-align:center;
+    margin-top: 75px;
+    background-color: rgba(255,255,255,0.5);
+    min-height: 200px;
+    color: #383533;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+// .orderbtn{
+//     margin-left: 25%;
+//     padding-right: 15px;
+// }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+.about{
+    font-size: 2pt;
+}
+.sec-line{
+    font-size: 10pt;
+}
+.sec-center{
+    clear:both;
+    font-size: 13pt;
+    text-align: center;
+}
+.pile{
+    width: 250px;
+    margin-left: 23%;
+}
+
+h2{
+    padding-top: 35px;
+    font-size: 20pt;
+}
+
+.under{
+    padding-left: 20px;
+}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+.about{
+    font-size: 3pt;
+}
+.sec-line{
+    font-size: 13pt;
+}
+.sec-center{
+    clear:both;
+    font-size: 17pt;
+    text-align: center;
+}
+.pile{
+    width: 250px;
+    margin-left: 30%;
+}
+
+h2{
+    padding-top: 35px;
+    font-size: 20pt;
+}
+
+.under{
+    padding-left: 20px;
+}
+}

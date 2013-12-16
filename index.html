@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <title>Franklin Grove Oranges</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script>
+    $(function() {
+        $(".main").onepage_scroll({
+           sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+           easing: "ease", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+           animationTime: 1000, // AnimationTime let you define how long each section takes to animate
+           pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+           updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+           beforeMove: function(index) {}, // This option accepts a callback function. The function will be called before the page moves.
+           afterMove: function(index) {}, // This option accepts a callback function. The function will be called after the page moves.
+           loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+           responsiveFallback: false // You can fallback to normal page scroll by defining the width of the browser in which you want the responsive fallback to be triggered. For example, set this to 600 and whenever the browser's width is less than 600, the fallback will kick in.
+        });
+
+        $(".logo").click(function(evt) {
+            evt.preventDefault();
+            $(".main").moveTo(1);
+        });
+
+        $(".about-link").click(function(evt) {
+            evt.preventDefault();
+            $(".main").moveTo(2);
+        });
+
+        $(".order-link").click(function(evt) {
+            evt.preventDefault();
+            $(".main").moveTo(3);
+        });
+    });
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/scroll.css">
+    <style>
+        .ui-menu { width: 150px; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+    <script type="text/javascript" src='js/jquery.js'></script>
+</head>
+<body>
+<header class="top">
+    <div class="container navcontainer">
+        <a href="/" class="logo" title="Franklin-Groves"></a>
+        <nav class="nav nav-pills" role"navigation">
+            <a class="about-link" href="#about">ABOUT</a>
+            <a class="order-link" href="#order">ORDER</a>
+        </nav>
+    </div>
+</header>
+
+<div class="main">
+    <section>
+        <!-- HERO -->
+        <div class="hero-image">
+            <div class="headline">
+              <h1 class="text-center">Franklin Groves</h1>
+                <p>
+                 <h4>Legacy, Stewardship, Quality</h4>
+
+                <div>"At Franklin Groves we focus on freshness and deliver the best Californian Navel Oranges directly from <i>our</i> groves to <i>your</i> door!"</div>
+                </p>
+                <a href="#about" type="button" class="btn btn-default btn-lg">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container about">
+            <img class="pile" src="images/pileoforanges.jpg" width="440px">
+            <div class="about" id="about">
+                <h1 class="sec-center">It's more than an Orange...</h1>
+                <h1 class="sec-center">It's a <i>California</i> Orange.</h1> <Br>
+             <!--    <p class="sec-center"> -->
+                <h4 class="sec-center under">Legacy, Stewardship, Quality</h4>
+                <br>
+                <div class="sec-line">Franklin Groves was founded in 1953 with 35 acres in the San Joaquin Valley of California. Today, Franklin Groves is a 4th generation family owned and operated world class citrus producer, farming acreage from Orange Cove to Maricopa.  </div>
+                <br>
+                <div class="sec-line">California agriculture, and especially citrus, is a fast paced modern endeavor.  Franklin Groves applies the latest in advanced technology and a strong work ethic to meet the needs of our customers, health of our groves, and challenges of farming.</div>
+                <br>
+                <div class="sec-line">Our <strong>passion</strong> is to provide our consumers with a consistent, ultra-premium orange and our mission is to keep our groves healthy for future generations.   </div>
+
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FORM -->
+    <section id="order">
+        <div class="crate-image">
+            <div class="hidden apologies">Our apologies!  Franklin Grove is currently sold out of premium California Navel Oranges.  We will contact you when supplies become available.  Thank you for your support!</div>
+            <div class="check-out">
+                <h2 class="crate-mob">Order Yours Today!</h2>
+                <h3 class="crate-mob">A Gift Basket of 24 Ultra-Premium Organic California Navel Oranges for $35 Shipped!</h3>
+                <div class="container form">
+                    <fieldset class="row">
+                        <legend class="col-md-3">Step 1: Enter Your Email Address</legend>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="Email" placeholder="E-mail">
+                        </div>
+                        <div>
+                        <button type="button" class="orderbtn btn btn-default btn-lg">Next Step</button>
+                        </div>
+                    </fieldset>
+                    <!-- <div>Copyright 2013 Franklin Groves
+                        <span class=" glyphicon glyphicon-facebook"> </span>
+                    </div> -->
+            </div>
+        </div>
+        <div class="endline"> <i>Copyright 2013 Franklin Groves</i>
+        <span class=" glyphicon glyphicon-facebook"> </span>
+        </div>
+    </section>
+</div>
+</body>
+</html>
